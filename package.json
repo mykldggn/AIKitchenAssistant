@@ -1,0 +1,11 @@
+{
+  "name": "kitchen-assistant-app",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"cd server && npm start\" \"cd client && npm start\"",
+    "install-deps": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
